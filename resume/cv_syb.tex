@@ -1,0 +1,123 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{孙延宾}
+
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+\contactInfo{ybin.sun@163.com}{(+86) 187 0671 8156}{http://ybin.cc/}
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+
+\section{\faGraduationCap\  教育经历}
+\datedsubsection{\textbf{中南大学}, 湖南, 长沙}{2008 -- 2011}
+\textit{硕士}\ 基础数学
+\datedsubsection{\textbf{山东大学(威海)}, 山东, 威海}{2004 -- 2008}
+\textit{学士}\ 信息与计算科学
+
+\section{\faUsers\ 工作经历}
+\datedsubsection{\textbf{中兴通讯}(西安)}{2011年7月 -- 至今}
+\role{手机应用软件开发高级工程师}{}
+\begin{onehalfspacing}
+\begin{itemize}
+  \item 共同完成Camera APP新架构的设计和开发
+  \item 带领团队顺利完成Camera API的迁移以及Android Studio开发环境的转换
+  \item 承担应用代码版本控制管理、自动化测试以及持续集成等工作任务
+  \item 使用OpenGL ES、并行计算以及ARM NEON技术加速图像处理
+  \item 带领团队完成ZTE手机Camera应用的开发及维护工作
+\end{itemize}
+\end{onehalfspacing}
+
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ Android技能}
+% increase linespacing [parsep=0.5ex]
+\begin{description}[parsep=0.5ex]
+  \item[Android系统] \
+    \begin{description}
+         \item[应用开发] \ \\ 熟练掌握Android App开发流程、架构设计。
+            设计并实现ZTE Camera应用，包括独立的UI系统和动画效果、第三方算法库的集成方案、Camera API兼容方法、OpenGL ES和RenderScript加速图像处理等。
+         \item[View渲染流程] \ \\ 理解Android View的渲染流程(measure, layout, draw)，完成自定义UI组件。
+         \item[Android消息机制] \ \\ 理解Android Binder机制以及service manger，能编写native service和system service，了解binder driver的实现，利用该技术实现JPEG编码的硬件加速。
+            理解Android的handler消息处理机制、Android application与Linux process之间的关系。
+         \item [Android Graphic System] \ \\ 深入了解Android图形系统，以及利用OpenGL实现高效的图像显示。
+         \item [Camera技术栈] 深入理解Android平台的Camera技术栈，APP业务流程、Framework组织架构及实现、新的HAL模块化机制，
+            了解高通Camera HAL实现机制。
+         \item[整体架构] \ \\ 了解Android的整体架构，包括Linux kernel，Android native service
+            (如service manager, activity manager, window manager etc.) 等。
+            了解从Linux kernel到native service到Zygote到system service的整个流程，并阅读过相关源码。
+    \end{description}
+    
+  \item[开发工具] \
+    \begin{itemize}
+        \item 熟练使用ADT、Android Studio开发环境和Gradle构建系统，能够开发插件帮助业务开发。
+        \item 熟练使用Vim、Emacs文本编辑器
+    \end{itemize}
+\end{description}
+
+\newpage
+
+\section{\faCogs\ 编程技能}
+\begin{description}[parsep=0.5ex]
+  \item[JVM平台] \ \\ 理解Java虚拟机平台，熟悉Java class文件结构、类加载机制，JVM运行时内存、heap组成结构以及垃圾回收等，为学习JVM，曾仔细阅读JamVM(Dalvik VM的前身)源码，学习Java虚拟机的实现。
+  \item[Java编程] \ \\ 熟练掌握面向对象编程，能熟练使用Java的各种collections、范型、并发以及Lambda编程。熟练掌握Java多态、内部类及初始化流程。
+  \item[Kotlin编程] \ \\ 熟练使用Kotlin进行Android APP开发，掌握Kotlin语法、扩展函数、函数式编程以及协程，并理解这些语法在Java字节码层面的实现原理。
+  \item[C、C++以及JNI编程] \ \\ 熟练掌握C语言编程，理解编译、链接的过程； 了解C++面向对象、多重继承、类模板等，阅读代码无压力。了解ARM NEON技术并利用该技术加速图像处理。
+  \item[函数式编程] \ \\ 能清晰的理解函数的一等公民特性、数据不可变性、纯函数特性、闭包、惰性求值等，学习过Clojure编程，了解Emacs lisp语言、Groovy语言。
+  \item[OpenGL以及并行计算] \ \\ 熟练使用EGL和OpenGL ES的API，理解其概念以及开发流程，使用该技术实现Camera预览的实时滤镜效果。在Android平台使用RenderScript进行并行计算，完成图像颜色空间转换以及水印效果。
+  \item[机器学习] \ \\了解经典的机器学习算法（决策树、贝叶斯网络等），熟悉深度学习及其常见的神经网络（CNN、RNN、LSTM等），熟练使用Python及Tensorflow深度学习框架，参与实际项目利用该技术实现实时人像肤色检测。
+  \item[Linux平台] \
+    \begin{description}
+      \item[Kernel] \ \\ 了解内存管理、虚拟文件系统、驱动程序编写，熟悉进程的内存布局，曾深入内核源码进行部分学习，完整阅读过XV6项目的源码。
+      \item[Linux环境] \ \\ 熟悉Linux操作系统，日常使用以及工作中熟练使用Ubuntu系统。
+      \item[Shell环境] \ \\ 了解Shell编程，纯命令行下工作无压力。
+    \end{description}
+\end{description}
+
+\section{\faInfo\ 其他}
+% increase linespacing [parsep=0.5ex]
+\begin{description}
+  \item[英语] \ \\ 英语六级。
+  \item[Git] \ \\ 熟练使用并且透彻理解git的内部原理，工作以及自己业余写的代码都会用git来进行版本控制。
+  \item[Gradle以及CMake编译系统] \ \\ 熟练使用Gradle编译系统进行APP持续集成以及自动进行各个项目之间的适配；
+    使用CMake系统进行JNI代码编译及第三方算法库的配置管理。
+  \item[\LaTeX{}排版系统] \ \\ 熟练使用，毕业论文、技术交流使用的文档、公司培训使用的幻灯片都是用\LaTeX{}完成的。
+  \item[专利] \ \\ 《一种目标屏幕确定方法、装置及存储介质》
+\end{description}
+
+
+
+\section{\faInfo\ Introduction}
+I'm Eric, 33 years old, born in Shandong Province.
+
+I graduated from Shandong University at Weihai, a small coastal city in eastern Shandong. And I got my bachelor degree after my graduation. Although my major is Mathematics, I was also interested in computer science and learned some courses by myself.
+
+After that, I went to Central South Univerty, and got my master degree after graduation. I did not want to be a math teacher, but was interested in programming, so I found a job at ZTE corporation to work on Android Applications.
+
+From then on, I worked on the camera application of ZTE phones. It was almost seven years. I was a mobile software developer and became the team leader since last year.
+
+I like programming, but I don't want to do the same programming. I want to change, so I come here.
+
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
